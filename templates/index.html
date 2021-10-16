@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Based Motion</title>
+    <link rel="stylesheet" href="../static/Style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+<section>
+    <div class="vl"></div>
+    <div class="main">
+            <h1>Predicy The Activity</h1>
+
+            <form action="/predict" method="POST">
+
+                <br/>
+                <h3>Time</h3>
+                <input step=any class="form-control" id="Time" name="Time" required="required">
+                <br/>
+
+                <br/>
+                <h3>Acceleration for frontal axis</h3>
+                <input step=any class="form-control" id="Acceleration for frontal axis" name="Acceleration for frontal axis" required="required">
+                <br/>
+
+                <br>
+                <h3>Acceleration for vertical axis</h3>
+                <input step=any class="form-control" id="Acceleration for vertical axis" name="Acceleration for vertical axis" required="required">
+                <br/>
+
+                <br>
+                <h3>Acceleration for lateral axis</h3>
+                <input step=any class="form-control" id="Acceleration for lateral axis" name="Acceleration for lateral axis" required="required">
+                <br/>
+
+                <br>
+                <h3>Id</h3>
+                <select step=any id="Id" name="Id" required="required">
+
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                </select>
+                <br/>
+
+
+                <br>
+                <h3>RSSI</h3>
+                <input step=any class="form-control" id="RSSI" name="RSSI" required="required">
+                <br/>
+
+                <br>
+                <h3>Phase</h3>
+                <input step=any class="form-control" id="Phase" name="Phase" required="required">
+                <br/>
+
+                <br>
+                <h3>Frequency</h3>
+                <input step=any class="form-control" id="Frequency" name="Frequency" required="required">
+                <br/>
+
+
+                <input type="submit" class="btn-info" value="Predict">
+            </form>
+            <footer class="button"><p>Created by Ankit © 2021</p></footer>
+    </div>
+</section>
+</body>
+</html>
